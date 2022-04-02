@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import jsonify, request
+from flask import jsonify
 from text_extraction import download_image, read_text_from_image
 import filetype
 import os

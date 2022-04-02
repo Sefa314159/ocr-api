@@ -10,10 +10,9 @@ def download_image(image_url):
     except Exception as e:
         return e
 
-    # img_name = image_url.split('/')[-1]
-    # img_name = re.sub('[!@#$?=:,+,-]', '', img_name)
-    # img_name = hashlib.md5(img_name.encode("utf-8")).hexdigest()
-    img_name = hashlib.md5(image_url.encode("utf-8")).hexdigest()
+    img_name = image_url.split('/')[-1]
+    img_name = re.sub('[!@#$?=:,+,-]', '', img_name)
+    img_name = hashlib.md5(img_name.encode("utf-8")).hexdigest()
     path = 'tmp/' + img_name + ".jpg"
     file = open(path, "wb")
     file.write(response.content)

@@ -1,0 +1,5 @@
+Flask==2.0.0
+Flask-Babel==2.0.0
+paddlepaddle==2.1.0
+paddleocr==2.4.0.3
+filetype==1.0.7
